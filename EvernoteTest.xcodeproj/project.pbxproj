@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		142A5F601397E9D8004AB699 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 142A5F5F1397E9D8004AB699 /* Settings.bundle */; };
+		143A7D19139218AA00573D7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143A7D18139218AA00573D7B /* UIKit.framework */; };
+		143A7D1B139218AA00573D7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143A7D1A139218AA00573D7B /* Foundation.framework */; };
+		143A7D1D139218AA00573D7B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143A7D1C139218AA00573D7B /* CoreGraphics.framework */; };
+		143A7D26139218AA00573D7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A7D25139218AA00573D7B /* main.m */; };
+		143A7D29139218AA00573D7B /* EvernoteTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A7D28139218AA00573D7B /* EvernoteTestAppDelegate.m */; };
+		143A7D2F139218AA00573D7B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143A7D2E139218AA00573D7B /* RootViewController.m */; };
+		143C4A361392198800FC2E3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 143C4A2E1392198800FC2E3F /* InfoPlist.strings */; };
+		143C4A371392198800FC2E3F /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143C4A301392198800FC2E3F /* MainWindow-iPad.xib */; };
+		143C4A381392198800FC2E3F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143C4A321392198800FC2E3F /* MainWindow.xib */; };
+		143C4A391392198800FC2E3F /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143C4A341392198800FC2E3F /* RootViewController.xib */; };
+		143C4A8413921B4A00FC2E3F /* ENManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C4A8313921B4A00FC2E3F /* ENManager.m */; };
+		143C4A8813921B6000FC2E3F /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C4A8713921B6000FC2E3F /* NSData+MD5.m */; };
+		145B864C1395198900A0DED3 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 145B86491395198900A0DED3 /* delete.png */; };
+		145B864D1395198900A0DED3 /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 145B864B1395198900A0DED3 /* delete@2x.png */; };
+		145B865A139522A700A0DED3 /* QuartzHelpLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 145B8659139522A700A0DED3 /* QuartzHelpLibrary.m */; };
+		145DEF7D139482240097F538 /* 2tchSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 145DEF7C139482240097F538 /* 2tchSmall.png */; };
+		14944786139923F600444FE0 /* EDAMLimits.m in Sources */ = {isa = PBXBuildFile; fileRef = 1494475E139923F600444FE0 /* EDAMLimits.m */; };
+		14944787139923F600444FE0 /* Errors.m in Sources */ = {isa = PBXBuildFile; fileRef = 14944760139923F600444FE0 /* Errors.m */; };
+		14944788139923F600444FE0 /* NoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 14944762139923F600444FE0 /* NoteStore.m */; };
+		14944789139923F600444FE0 /* Types.m in Sources */ = {isa = PBXBuildFile; fileRef = 14944764139923F600444FE0 /* Types.m */; };
+		1494478A139923F600444FE0 /* UserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 14944766139923F600444FE0 /* UserStore.m */; };
+		1494478C139923F600444FE0 /* TBinaryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1494476B139923F600444FE0 /* TBinaryProtocol.m */; };
+		1494478D139923F600444FE0 /* TProtocolException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1494476E139923F600444FE0 /* TProtocolException.m */; };
+		1494478E139923F600444FE0 /* TProtocolUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 14944771139923F600444FE0 /* TProtocolUtil.m */; };
+		1494478F139923F600444FE0 /* TApplicationException.m in Sources */ = {isa = PBXBuildFile; fileRef = 14944774139923F600444FE0 /* TApplicationException.m */; };
+		14944790139923F600444FE0 /* TException.m in Sources */ = {isa = PBXBuildFile; fileRef = 14944776139923F600444FE0 /* TException.m */; };
+		14944791139923F600444FE0 /* THTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1494477B139923F600444FE0 /* THTTPClient.m */; };
+		14944792139923F600444FE0 /* TNSFileHandleTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1494477D139923F600444FE0 /* TNSFileHandleTransport.m */; };
+		14944793139923F600444FE0 /* TNSStreamTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1494477F139923F600444FE0 /* TNSStreamTransport.m */; };
+		14944794139923F600444FE0 /* TTransportException.m in Sources */ = {isa = PBXBuildFile; fileRef = 14944782139923F600444FE0 /* TTransportException.m */; };
+		14944795139923F600444FE0 /* TSharedProcessorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 14944784139923F600444FE0 /* TSharedProcessorFactory.m */; };
+		14B2EEAF13989B81005BD8B4 /* CreateNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B2EE9613989B81005BD8B4 /* CreateNoteViewController.m */; };
+		14B2EEB013989B81005BD8B4 /* CreateNoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B2EE9713989B81005BD8B4 /* CreateNoteViewController.xib */; };
+		14B2EEB113989B81005BD8B4 /* CreateNoteViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B2EE9913989B81005BD8B4 /* CreateNoteViewController_iPad.m */; };
+		14B2EEB213989B81005BD8B4 /* CreateNoteViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B2EE9A13989B81005BD8B4 /* CreateNoteViewController_iPad.xib */; };
+		14B2EEB313989B81005BD8B4 /* ImageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B2EE9C13989B81005BD8B4 /* ImageListView.m */; };
+		14B2EEB413989B81005BD8B4 /* ImageListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B2EE9D13989B81005BD8B4 /* ImageListView.xib */; };
+		14B2EEB513989B81005BD8B4 /* ImageListView_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B2EE9F13989B81005BD8B4 /* ImageListView_iPad.m */; };
+		14B2EEB613989B81005BD8B4 /* ImageListView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B2EEA013989B81005BD8B4 /* ImageListView_iPad.xib */; };
+		14B2EEB713989B81005BD8B4 /* CreateNotebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B2EEA313989B81005BD8B4 /* CreateNotebookViewController.m */; };
+		14B2EEB813989B81005BD8B4 /* CreateNotebookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B2EEA413989B81005BD8B4 /* CreateNotebookViewController.xib */; };
+		14B2EEB913989B81005BD8B4 /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B2EEA713989B81005BD8B4 /* NoteViewController.m */; };
+		14B2EEBA13989B81005BD8B4 /* NoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B2EEA813989B81005BD8B4 /* NoteViewController.xib */; };
+		14B2EEBB13989B81005BD8B4 /* NoteViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B2EEAA13989B81005BD8B4 /* NoteViewController_iPad.m */; };
+		14B2EEBC13989B81005BD8B4 /* NoteViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B2EEAB13989B81005BD8B4 /* NoteViewController_iPad.xib */; };
+		14B2EEBD13989B81005BD8B4 /* NotebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B2EEAE13989B81005BD8B4 /* NotebookViewController.m */; };
+		14FDABE11397814E008BF9D5 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FDABD81397814E008BF9D5 /* Default-Landscape.png */; };
+		14FDABE21397814E008BF9D5 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FDABD91397814E008BF9D5 /* Default-Portrait.png */; };
+		14FDABE31397814E008BF9D5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FDABDA1397814E008BF9D5 /* Default.png */; };
+		14FDABE41397814E008BF9D5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FDABDB1397814E008BF9D5 /* Default@2x.png */; };
+		14FDABE71397814E008BF9D5 /* icon114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FDABDE1397814E008BF9D5 /* icon114x114.png */; };
+		14FDABE81397814E008BF9D5 /* icon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FDABDF1397814E008BF9D5 /* icon57x57.png */; };
+		14FDABE91397814E008BF9D5 /* icon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FDABE01397814E008BF9D5 /* icon72x72.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		142A5F5F1397E9D8004AB699 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		143A7D14139218A900573D7B /* EvernoteTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvernoteTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		143A7D18139218AA00573D7B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		143A7D1A139218AA00573D7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		143A7D1C139218AA00573D7B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		143A7D20139218AA00573D7B /* EvernoteTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EvernoteTest-Info.plist"; sourceTree = "<group>"; };
+		143A7D24139218AA00573D7B /* EvernoteTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EvernoteTest-Prefix.pch"; sourceTree = "<group>"; };
+		143A7D25139218AA00573D7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		143A7D27139218AA00573D7B /* EvernoteTestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EvernoteTestAppDelegate.h; sourceTree = "<group>"; };
+		143A7D28139218AA00573D7B /* EvernoteTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EvernoteTestAppDelegate.m; sourceTree = "<group>"; };
+		143A7D2D139218AA00573D7B /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		143A7D2E139218AA00573D7B /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		143C4A2F1392198800FC2E3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		143C4A311392198800FC2E3F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		143C4A331392198800FC2E3F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		143C4A351392198800FC2E3F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		143C4A8213921B4A00FC2E3F /* ENManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ENManager.h; path = Evernote.framework/ENManager.h; sourceTree = "<group>"; };
+		143C4A8313921B4A00FC2E3F /* ENManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ENManager.m; path = Evernote.framework/ENManager.m; sourceTree = "<group>"; };
+		143C4A8613921B6000FC2E3F /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5.h"; sourceTree = "<group>"; };
+		143C4A8713921B6000FC2E3F /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5.m"; sourceTree = "<group>"; };
+		145B86491395198900A0DED3 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		145B864B1395198900A0DED3 /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
+		145B8658139522A700A0DED3 /* QuartzHelpLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuartzHelpLibrary.h; path = "../Quartz-Help-Library/QuartzHelpLibrary.h"; sourceTree = "<group>"; };
+		145B8659139522A700A0DED3 /* QuartzHelpLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuartzHelpLibrary.m; path = "../Quartz-Help-Library/QuartzHelpLibrary.m"; sourceTree = "<group>"; };
+		145DEF7C139482240097F538 /* 2tchSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2tchSmall.png; sourceTree = "<group>"; };
+		1494475D139923F600444FE0 /* EDAMLimits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMLimits.h; sourceTree = "<group>"; };
+		1494475E139923F600444FE0 /* EDAMLimits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMLimits.m; sourceTree = "<group>"; };
+		1494475F139923F600444FE0 /* Errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Errors.h; sourceTree = "<group>"; };
+		14944760139923F600444FE0 /* Errors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Errors.m; sourceTree = "<group>"; };
+		14944761139923F600444FE0 /* NoteStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteStore.h; sourceTree = "<group>"; };
+		14944762139923F600444FE0 /* NoteStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteStore.m; sourceTree = "<group>"; };
+		14944763139923F600444FE0 /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
+		14944764139923F600444FE0 /* Types.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Types.m; sourceTree = "<group>"; };
+		14944765139923F600444FE0 /* UserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserStore.h; sourceTree = "<group>"; };
+		14944766139923F600444FE0 /* UserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserStore.m; sourceTree = "<group>"; };
+		1494476A139923F600444FE0 /* TBinaryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBinaryProtocol.h; sourceTree = "<group>"; };
+		1494476B139923F600444FE0 /* TBinaryProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBinaryProtocol.m; sourceTree = "<group>"; };
+		1494476C139923F600444FE0 /* TProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocol.h; sourceTree = "<group>"; };
+		1494476D139923F600444FE0 /* TProtocolException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolException.h; sourceTree = "<group>"; };
+		1494476E139923F600444FE0 /* TProtocolException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolException.m; sourceTree = "<group>"; };
+		1494476F139923F600444FE0 /* TProtocolFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolFactory.h; sourceTree = "<group>"; };
+		14944770139923F600444FE0 /* TProtocolUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolUtil.h; sourceTree = "<group>"; };
+		14944771139923F600444FE0 /* TProtocolUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolUtil.m; sourceTree = "<group>"; };
+		14944773139923F600444FE0 /* TApplicationException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TApplicationException.h; sourceTree = "<group>"; };
+		14944774139923F600444FE0 /* TApplicationException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TApplicationException.m; sourceTree = "<group>"; };
+		14944775139923F600444FE0 /* TException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TException.h; sourceTree = "<group>"; };
+		14944776139923F600444FE0 /* TException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TException.m; sourceTree = "<group>"; };
+		14944777139923F600444FE0 /* TProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProcessor.h; sourceTree = "<group>"; };
+		14944778139923F600444FE0 /* TProcessorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProcessorFactory.h; sourceTree = "<group>"; };
+		1494477A139923F600444FE0 /* THTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTTPClient.h; sourceTree = "<group>"; };
+		1494477B139923F600444FE0 /* THTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTTPClient.m; sourceTree = "<group>"; };
+		1494477C139923F600444FE0 /* TNSFileHandleTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSFileHandleTransport.h; sourceTree = "<group>"; };
+		1494477D139923F600444FE0 /* TNSFileHandleTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSFileHandleTransport.m; sourceTree = "<group>"; };
+		1494477E139923F600444FE0 /* TNSStreamTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSStreamTransport.h; sourceTree = "<group>"; };
+		1494477F139923F600444FE0 /* TNSStreamTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSStreamTransport.m; sourceTree = "<group>"; };
+		14944780139923F600444FE0 /* TTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransport.h; sourceTree = "<group>"; };
+		14944781139923F600444FE0 /* TTransportException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransportException.h; sourceTree = "<group>"; };
+		14944782139923F600444FE0 /* TTransportException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTransportException.m; sourceTree = "<group>"; };
+		14944783139923F600444FE0 /* TSharedProcessorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSharedProcessorFactory.h; sourceTree = "<group>"; };
+		14944784139923F600444FE0 /* TSharedProcessorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSharedProcessorFactory.m; sourceTree = "<group>"; };
+		14B2EE9513989B81005BD8B4 /* CreateNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateNoteViewController.h; sourceTree = "<group>"; };
+		14B2EE9613989B81005BD8B4 /* CreateNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateNoteViewController.m; sourceTree = "<group>"; };
+		14B2EE9713989B81005BD8B4 /* CreateNoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateNoteViewController.xib; sourceTree = "<group>"; };
+		14B2EE9813989B81005BD8B4 /* CreateNoteViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateNoteViewController_iPad.h; sourceTree = "<group>"; };
+		14B2EE9913989B81005BD8B4 /* CreateNoteViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateNoteViewController_iPad.m; sourceTree = "<group>"; };
+		14B2EE9A13989B81005BD8B4 /* CreateNoteViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateNoteViewController_iPad.xib; sourceTree = "<group>"; };
+		14B2EE9B13989B81005BD8B4 /* ImageListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageListView.h; sourceTree = "<group>"; };
+		14B2EE9C13989B81005BD8B4 /* ImageListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageListView.m; sourceTree = "<group>"; };
+		14B2EE9D13989B81005BD8B4 /* ImageListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageListView.xib; sourceTree = "<group>"; };
+		14B2EE9E13989B81005BD8B4 /* ImageListView_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageListView_iPad.h; sourceTree = "<group>"; };
+		14B2EE9F13989B81005BD8B4 /* ImageListView_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageListView_iPad.m; sourceTree = "<group>"; };
+		14B2EEA013989B81005BD8B4 /* ImageListView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageListView_iPad.xib; sourceTree = "<group>"; };
+		14B2EEA213989B81005BD8B4 /* CreateNotebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateNotebookViewController.h; sourceTree = "<group>"; };
+		14B2EEA313989B81005BD8B4 /* CreateNotebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateNotebookViewController.m; sourceTree = "<group>"; };
+		14B2EEA413989B81005BD8B4 /* CreateNotebookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateNotebookViewController.xib; sourceTree = "<group>"; };
+		14B2EEA613989B81005BD8B4 /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewController.h; sourceTree = "<group>"; };
+		14B2EEA713989B81005BD8B4 /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewController.m; sourceTree = "<group>"; };
+		14B2EEA813989B81005BD8B4 /* NoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteViewController.xib; sourceTree = "<group>"; };
+		14B2EEA913989B81005BD8B4 /* NoteViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewController_iPad.h; sourceTree = "<group>"; };
+		14B2EEAA13989B81005BD8B4 /* NoteViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewController_iPad.m; sourceTree = "<group>"; };
+		14B2EEAB13989B81005BD8B4 /* NoteViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteViewController_iPad.xib; sourceTree = "<group>"; };
+		14B2EEAD13989B81005BD8B4 /* NotebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotebookViewController.h; sourceTree = "<group>"; };
+		14B2EEAE13989B81005BD8B4 /* NotebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotebookViewController.m; sourceTree = "<group>"; };
+		14FDABD81397814E008BF9D5 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		14FDABD91397814E008BF9D5 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		14FDABDA1397814E008BF9D5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		14FDABDB1397814E008BF9D5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		14FDABDE1397814E008BF9D5 /* icon114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114x114.png; sourceTree = "<group>"; };
+		14FDABDF1397814E008BF9D5 /* icon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57x57.png; sourceTree = "<group>"; };
+		14FDABE01397814E008BF9D5 /* icon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72x72.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		143A7D11139218A900573D7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143A7D19139218AA00573D7B /* UIKit.framework in Frameworks */,
+				143A7D1B139218AA00573D7B /* Foundation.framework in Frameworks */,
+				143A7D1D139218AA00573D7B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		143A7D09139218A900573D7B = {
+			isa = PBXGroup;
+			children = (
+				143C4A7E13921AFD00FC2E3F /* Evernote.framework */,
+				145B86571395228E00A0DED3 /* Quartz Help Library */,
+				14B2EEBE13989B8F005BD8B4 /* Evernote */,
+				143A7D1E139218AA00573D7B /* EvernoteTest */,
+				143C4A2D1392198800FC2E3F /* Resources */,
+				143A7D17139218AA00573D7B /* Frameworks */,
+				143A7D15139218A900573D7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		143A7D15139218A900573D7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				143A7D14139218A900573D7B /* EvernoteTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		143A7D17139218AA00573D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				143A7D18139218AA00573D7B /* UIKit.framework */,
+				143A7D1A139218AA00573D7B /* Foundation.framework */,
+				143A7D1C139218AA00573D7B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		143A7D1E139218AA00573D7B /* EvernoteTest */ = {
+			isa = PBXGroup;
+			children = (
+				143A7D2D139218AA00573D7B /* RootViewController.h */,
+				143A7D2E139218AA00573D7B /* RootViewController.m */,
+				143A7D27139218AA00573D7B /* EvernoteTestAppDelegate.h */,
+				143A7D28139218AA00573D7B /* EvernoteTestAppDelegate.m */,
+				143A7D20139218AA00573D7B /* EvernoteTest-Info.plist */,
+				143A7D24139218AA00573D7B /* EvernoteTest-Prefix.pch */,
+				143A7D25139218AA00573D7B /* main.m */,
+			);
+			path = EvernoteTest;
+			sourceTree = "<group>";
+		};
+		143C4A2D1392198800FC2E3F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				142A5F5F1397E9D8004AB699 /* Settings.bundle */,
+				14FDABD71397814E008BF9D5 /* image */,
+				145B86481395198900A0DED3 /* image1x */,
+				145B864A1395198900A0DED3 /* image2x */,
+				145DEF7C139482240097F538 /* 2tchSmall.png */,
+				143C4A2E1392198800FC2E3F /* InfoPlist.strings */,
+				143C4A301392198800FC2E3F /* MainWindow-iPad.xib */,
+				143C4A321392198800FC2E3F /* MainWindow.xib */,
+				143C4A341392198800FC2E3F /* RootViewController.xib */,
+			);
+			name = Resources;
+			path = EvernoteTest/Resources;
+			sourceTree = "<group>";
+		};
+		143C4A7E13921AFD00FC2E3F /* Evernote.framework */ = {
+			isa = PBXGroup;
+			children = (
+				143C4A8213921B4A00FC2E3F /* ENManager.h */,
+				143C4A8313921B4A00FC2E3F /* ENManager.m */,
+				143C4A8513921B6000FC2E3F /* tool */,
+				1494475A139923F600444FE0 /* Evernote */,
+			);
+			name = Evernote.framework;
+			sourceTree = "<group>";
+		};
+		143C4A8513921B6000FC2E3F /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				143C4A8613921B6000FC2E3F /* NSData+MD5.h */,
+				143C4A8713921B6000FC2E3F /* NSData+MD5.m */,
+			);
+			name = tool;
+			path = Evernote.framework/tool;
+			sourceTree = "<group>";
+		};
+		145B86481395198900A0DED3 /* image1x */ = {
+			isa = PBXGroup;
+			children = (
+				145B86491395198900A0DED3 /* delete.png */,
+			);
+			path = image1x;
+			sourceTree = "<group>";
+		};
+		145B864A1395198900A0DED3 /* image2x */ = {
+			isa = PBXGroup;
+			children = (
+				145B864B1395198900A0DED3 /* delete@2x.png */,
+			);
+			path = image2x;
+			sourceTree = "<group>";
+		};
+		145B86571395228E00A0DED3 /* Quartz Help Library */ = {
+			isa = PBXGroup;
+			children = (
+				145B8658139522A700A0DED3 /* QuartzHelpLibrary.h */,
+				145B8659139522A700A0DED3 /* QuartzHelpLibrary.m */,
+			);
+			name = "Quartz Help Library";
+			sourceTree = "<group>";
+		};
+		1494475A139923F600444FE0 /* Evernote */ = {
+			isa = PBXGroup;
+			children = (
+				1494475C139923F600444FE0 /* edam */,
+				14944768139923F600444FE0 /* thrift */,
+			);
+			name = Evernote;
+			path = Evernote.framework/Evernote;
+			sourceTree = "<group>";
+		};
+		1494475C139923F600444FE0 /* edam */ = {
+			isa = PBXGroup;
+			children = (
+				1494475D139923F600444FE0 /* EDAMLimits.h */,
+				1494475E139923F600444FE0 /* EDAMLimits.m */,
+				1494475F139923F600444FE0 /* Errors.h */,
+				14944760139923F600444FE0 /* Errors.m */,
+				14944761139923F600444FE0 /* NoteStore.h */,
+				14944762139923F600444FE0 /* NoteStore.m */,
+				14944763139923F600444FE0 /* Types.h */,
+				14944764139923F600444FE0 /* Types.m */,
+				14944765139923F600444FE0 /* UserStore.h */,
+				14944766139923F600444FE0 /* UserStore.m */,
+			);
+			path = edam;
+			sourceTree = "<group>";
+		};
+		14944768139923F600444FE0 /* thrift */ = {
+			isa = PBXGroup;
+			children = (
+				14944769139923F600444FE0 /* protocol */,
+				14944772139923F600444FE0 /* server */,
+				14944773139923F600444FE0 /* TApplicationException.h */,
+				14944774139923F600444FE0 /* TApplicationException.m */,
+				14944775139923F600444FE0 /* TException.h */,
+				14944776139923F600444FE0 /* TException.m */,
+				14944777139923F600444FE0 /* TProcessor.h */,
+				14944778139923F600444FE0 /* TProcessorFactory.h */,
+				14944779139923F600444FE0 /* transport */,
+				14944783139923F600444FE0 /* TSharedProcessorFactory.h */,
+				14944784139923F600444FE0 /* TSharedProcessorFactory.m */,
+			);
+			path = thrift;
+			sourceTree = "<group>";
+		};
+		14944769139923F600444FE0 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				1494476A139923F600444FE0 /* TBinaryProtocol.h */,
+				1494476B139923F600444FE0 /* TBinaryProtocol.m */,
+				1494476C139923F600444FE0 /* TProtocol.h */,
+				1494476D139923F600444FE0 /* TProtocolException.h */,
+				1494476E139923F600444FE0 /* TProtocolException.m */,
+				1494476F139923F600444FE0 /* TProtocolFactory.h */,
+				14944770139923F600444FE0 /* TProtocolUtil.h */,
+				14944771139923F600444FE0 /* TProtocolUtil.m */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		14944772139923F600444FE0 /* server */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		14944779139923F600444FE0 /* transport */ = {
+			isa = PBXGroup;
+			children = (
+				1494477A139923F600444FE0 /* THTTPClient.h */,
+				1494477B139923F600444FE0 /* THTTPClient.m */,
+				1494477C139923F600444FE0 /* TNSFileHandleTransport.h */,
+				1494477D139923F600444FE0 /* TNSFileHandleTransport.m */,
+				1494477E139923F600444FE0 /* TNSStreamTransport.h */,
+				1494477F139923F600444FE0 /* TNSStreamTransport.m */,
+				14944780139923F600444FE0 /* TTransport.h */,
+				14944781139923F600444FE0 /* TTransportException.h */,
+				14944782139923F600444FE0 /* TTransportException.m */,
+			);
+			path = transport;
+			sourceTree = "<group>";
+		};
+		14B2EE9413989B81005BD8B4 /* CreateNote */ = {
+			isa = PBXGroup;
+			children = (
+				14B2EE9513989B81005BD8B4 /* CreateNoteViewController.h */,
+				14B2EE9613989B81005BD8B4 /* CreateNoteViewController.m */,
+				14B2EE9713989B81005BD8B4 /* CreateNoteViewController.xib */,
+				14B2EE9813989B81005BD8B4 /* CreateNoteViewController_iPad.h */,
+				14B2EE9913989B81005BD8B4 /* CreateNoteViewController_iPad.m */,
+				14B2EE9A13989B81005BD8B4 /* CreateNoteViewController_iPad.xib */,
+				14B2EE9B13989B81005BD8B4 /* ImageListView.h */,
+				14B2EE9C13989B81005BD8B4 /* ImageListView.m */,
+				14B2EE9D13989B81005BD8B4 /* ImageListView.xib */,
+				14B2EE9E13989B81005BD8B4 /* ImageListView_iPad.h */,
+				14B2EE9F13989B81005BD8B4 /* ImageListView_iPad.m */,
+				14B2EEA013989B81005BD8B4 /* ImageListView_iPad.xib */,
+			);
+			name = CreateNote;
+			path = EvernoteTest/CreateNote;
+			sourceTree = "<group>";
+		};
+		14B2EEA113989B81005BD8B4 /* CreateNotebook */ = {
+			isa = PBXGroup;
+			children = (
+				14B2EEA213989B81005BD8B4 /* CreateNotebookViewController.h */,
+				14B2EEA313989B81005BD8B4 /* CreateNotebookViewController.m */,
+				14B2EEA413989B81005BD8B4 /* CreateNotebookViewController.xib */,
+			);
+			name = CreateNotebook;
+			path = EvernoteTest/CreateNotebook;
+			sourceTree = "<group>";
+		};
+		14B2EEA513989B81005BD8B4 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				14B2EEA613989B81005BD8B4 /* NoteViewController.h */,
+				14B2EEA713989B81005BD8B4 /* NoteViewController.m */,
+				14B2EEA813989B81005BD8B4 /* NoteViewController.xib */,
+				14B2EEA913989B81005BD8B4 /* NoteViewController_iPad.h */,
+				14B2EEAA13989B81005BD8B4 /* NoteViewController_iPad.m */,
+				14B2EEAB13989B81005BD8B4 /* NoteViewController_iPad.xib */,
+			);
+			name = Note;
+			path = EvernoteTest/Note;
+			sourceTree = "<group>";
+		};
+		14B2EEAC13989B81005BD8B4 /* Notebook */ = {
+			isa = PBXGroup;
+			children = (
+				14B2EEAD13989B81005BD8B4 /* NotebookViewController.h */,
+				14B2EEAE13989B81005BD8B4 /* NotebookViewController.m */,
+			);
+			name = Notebook;
+			path = EvernoteTest/Notebook;
+			sourceTree = "<group>";
+		};
+		14B2EEBE13989B8F005BD8B4 /* Evernote */ = {
+			isa = PBXGroup;
+			children = (
+				14B2EE9413989B81005BD8B4 /* CreateNote */,
+				14B2EEA113989B81005BD8B4 /* CreateNotebook */,
+				14B2EEA513989B81005BD8B4 /* Note */,
+				14B2EEAC13989B81005BD8B4 /* Notebook */,
+			);
+			name = Evernote;
+			sourceTree = "<group>";
+		};
+		14FDABD71397814E008BF9D5 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				14FDABD81397814E008BF9D5 /* Default-Landscape.png */,
+				14FDABD91397814E008BF9D5 /* Default-Portrait.png */,
+				14FDABDA1397814E008BF9D5 /* Default.png */,
+				14FDABDB1397814E008BF9D5 /* Default@2x.png */,
+				14FDABDE1397814E008BF9D5 /* icon114x114.png */,
+				14FDABDF1397814E008BF9D5 /* icon57x57.png */,
+				14FDABE01397814E008BF9D5 /* icon72x72.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		143A7D13139218A900573D7B /* EvernoteTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 143A7D35139218AA00573D7B /* Build configuration list for PBXNativeTarget "EvernoteTest" */;
+			buildPhases = (
+				143A7D10139218A900573D7B /* Sources */,
+				143A7D11139218A900573D7B /* Frameworks */,
+				143A7D12139218A900573D7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EvernoteTest;
+			productName = EvernoteTest;
+			productReference = 143A7D14139218A900573D7B /* EvernoteTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		143A7D0B139218A900573D7B /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 143A7D0E139218A900573D7B /* Build configuration list for PBXProject "EvernoteTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 143A7D09139218A900573D7B;
+			productRefGroup = 143A7D15139218A900573D7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				143A7D13139218A900573D7B /* EvernoteTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		143A7D12139218A900573D7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143C4A361392198800FC2E3F /* InfoPlist.strings in Resources */,
+				143C4A371392198800FC2E3F /* MainWindow-iPad.xib in Resources */,
+				143C4A381392198800FC2E3F /* MainWindow.xib in Resources */,
+				143C4A391392198800FC2E3F /* RootViewController.xib in Resources */,
+				145DEF7D139482240097F538 /* 2tchSmall.png in Resources */,
+				145B864C1395198900A0DED3 /* delete.png in Resources */,
+				145B864D1395198900A0DED3 /* delete@2x.png in Resources */,
+				14FDABE11397814E008BF9D5 /* Default-Landscape.png in Resources */,
+				14FDABE21397814E008BF9D5 /* Default-Portrait.png in Resources */,
+				14FDABE31397814E008BF9D5 /* Default.png in Resources */,
+				14FDABE41397814E008BF9D5 /* Default@2x.png in Resources */,
+				14FDABE71397814E008BF9D5 /* icon114x114.png in Resources */,
+				14FDABE81397814E008BF9D5 /* icon57x57.png in Resources */,
+				14FDABE91397814E008BF9D5 /* icon72x72.png in Resources */,
+				142A5F601397E9D8004AB699 /* Settings.bundle in Resources */,
+				14B2EEB013989B81005BD8B4 /* CreateNoteViewController.xib in Resources */,
+				14B2EEB213989B81005BD8B4 /* CreateNoteViewController_iPad.xib in Resources */,
+				14B2EEB413989B81005BD8B4 /* ImageListView.xib in Resources */,
+				14B2EEB613989B81005BD8B4 /* ImageListView_iPad.xib in Resources */,
+				14B2EEB813989B81005BD8B4 /* CreateNotebookViewController.xib in Resources */,
+				14B2EEBA13989B81005BD8B4 /* NoteViewController.xib in Resources */,
+				14B2EEBC13989B81005BD8B4 /* NoteViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		143A7D10139218A900573D7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143A7D26139218AA00573D7B /* main.m in Sources */,
+				143A7D29139218AA00573D7B /* EvernoteTestAppDelegate.m in Sources */,
+				143A7D2F139218AA00573D7B /* RootViewController.m in Sources */,
+				143C4A8413921B4A00FC2E3F /* ENManager.m in Sources */,
+				143C4A8813921B6000FC2E3F /* NSData+MD5.m in Sources */,
+				145B865A139522A700A0DED3 /* QuartzHelpLibrary.m in Sources */,
+				14B2EEAF13989B81005BD8B4 /* CreateNoteViewController.m in Sources */,
+				14B2EEB113989B81005BD8B4 /* CreateNoteViewController_iPad.m in Sources */,
+				14B2EEB313989B81005BD8B4 /* ImageListView.m in Sources */,
+				14B2EEB513989B81005BD8B4 /* ImageListView_iPad.m in Sources */,
+				14B2EEB713989B81005BD8B4 /* CreateNotebookViewController.m in Sources */,
+				14B2EEB913989B81005BD8B4 /* NoteViewController.m in Sources */,
+				14B2EEBB13989B81005BD8B4 /* NoteViewController_iPad.m in Sources */,
+				14B2EEBD13989B81005BD8B4 /* NotebookViewController.m in Sources */,
+				14944786139923F600444FE0 /* EDAMLimits.m in Sources */,
+				14944787139923F600444FE0 /* Errors.m in Sources */,
+				14944788139923F600444FE0 /* NoteStore.m in Sources */,
+				14944789139923F600444FE0 /* Types.m in Sources */,
+				1494478A139923F600444FE0 /* UserStore.m in Sources */,
+				1494478C139923F600444FE0 /* TBinaryProtocol.m in Sources */,
+				1494478D139923F600444FE0 /* TProtocolException.m in Sources */,
+				1494478E139923F600444FE0 /* TProtocolUtil.m in Sources */,
+				1494478F139923F600444FE0 /* TApplicationException.m in Sources */,
+				14944790139923F600444FE0 /* TException.m in Sources */,
+				14944791139923F600444FE0 /* THTTPClient.m in Sources */,
+				14944792139923F600444FE0 /* TNSFileHandleTransport.m in Sources */,
+				14944793139923F600444FE0 /* TNSStreamTransport.m in Sources */,
+				14944794139923F600444FE0 /* TTransportException.m in Sources */,
+				14944795139923F600444FE0 /* TSharedProcessorFactory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		143C4A2E1392198800FC2E3F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143C4A2F1392198800FC2E3F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		143C4A301392198800FC2E3F /* MainWindow-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143C4A311392198800FC2E3F /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
+		143C4A321392198800FC2E3F /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143C4A331392198800FC2E3F /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		143C4A341392198800FC2E3F /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143C4A351392198800FC2E3F /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		143A7D33139218AA00573D7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		143A7D34139218AA00573D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		143A7D36139218AA00573D7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EvernoteTest/EvernoteTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Evernote.framework/Evernote/thrift/**";
+				INFOPLIST_FILE = "EvernoteTest/EvernoteTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		143A7D37139218AA00573D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EvernoteTest/EvernoteTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Evernote.framework/Evernote/thrift/**";
+				INFOPLIST_FILE = "EvernoteTest/EvernoteTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		143A7D0E139218A900573D7B /* Build configuration list for PBXProject "EvernoteTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143A7D33139218AA00573D7B /* Debug */,
+				143A7D34139218AA00573D7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		143A7D35139218AA00573D7B /* Build configuration list for PBXNativeTarget "EvernoteTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143A7D36139218AA00573D7B /* Debug */,
+				143A7D37139218AA00573D7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 143A7D0B139218A900573D7B /* Project object */;
+}
